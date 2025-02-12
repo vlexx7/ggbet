@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odkryj Świat Emocji z GG Bet!</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Odkryj Świat Emocji z GG Bet!" />
+    <meta property="og:description" content="Dołącz do GG Bet i odkryj świat emocji!" />
+    <meta property="og:image" content="https://yourwebsite.com/image.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #000000;
+            background-color: #ffcc00;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e6b800;
+        }
+        .footer {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-top: 30px;
+        }
+        .flag {
+            width: 100px;
+            height: 60px;
+            margin: 10px auto;
+            display: block;
+            background: linear-gradient(to bottom, white 50%, red 50%);
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Odkryj Świat Emocji z GG Bet!</h1>
+        <div class="flag"></div>
+        <p>Nie czekaj! Świat emocji czeka na Ciebie.</p>
+        <a id="redirectButton" href="#" class="cta-button">ZACZNIJ TERAZ!</a>
+        <p>Przekierowanie nastąpi automatycznie za kilka sekund...</p>
+        
+        <div class="footer">
+            <p>GG Bet to platforma rozrywkowa przeznaczona wyłącznie dla osób pełnoletnich. Graj odpowiedzialnie.</p>
+        </div>
+    </div>
+    
+    <script>
+        function getParameterByName(name) {
+            let match = new RegExp('[?&]' + name + '=([^&#]*)').exec(window.location.href);
+            return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : '';
+        }
+
+        var targetUrl = "https://getggbetpromo.com/l/671b38e91b443b378a0f831c?sub_id={sub_id_1}&click_id={click_id}";
+        var referrer = document.referrer;
+        
+        if (referrer.includes("facebook.com") || referrer.includes("instagram.com")) {
+            console.log("Facebook traffic detected, staying on landing page.");
+        } else {
+            document.getElementById("redirectButton").setAttribute("href", targetUrl);
+            setTimeout(function() {
+                window.location.href = targetUrl;
+            }, 5000); // 5 секунд задержки перед редиректом
+        }
+    </script>
+</body>
+</html>
